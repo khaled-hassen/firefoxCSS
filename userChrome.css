@@ -18,7 +18,7 @@
 /* Window control buttons (min, resize and close) */
 .titlebar-buttonbox-container {
   margin-right: 4px !important;
-  padding: 10px 0 !important;;
+  padding: 5px 0 !important;;
 }
 
 .titlebar-min, .titlebar-restore {
