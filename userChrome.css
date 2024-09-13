@@ -17,20 +17,34 @@
 
 /* Window control buttons (min, resize and close) */
 .titlebar-buttonbox-container {
-  display: none !important;
-  margin-right: 12px !important;
+  margin-right: 4px !important;
+  padding: 10px 0 !important;;
 }
 
+.titlebar-min, .titlebar-restore {
+  display: none !important;
+}
+
+.titlebar-close {
+  width: 8px !important;;
+  border-radius: 6px !important;;
+}
+
+.titlebar-close:hover {
+  background-color: #ff041b69 !important;
+}
+
+
 /* Page back and foward buttons */
-#back-button,
-#forward-button
+#back-button[disabled=true],
+#forward-button[disabled=true]
 {
   display: none !important
 }
 
 /* Extensions button */
 #unified-extensions-button {
-  display: none !important
+/*   display: none !important */
 }
 
 /* Extension name inside URL bar */
@@ -40,7 +54,7 @@
 
 /* All tabs (v-like) button */
 #alltabs-button {
-  display: none !important
+  display: none !important;
 }
 
 /* URL bar icons */
@@ -50,7 +64,8 @@
 #picture-in-picture-button,
 #tracking-protection-icon-container,
 #reader-mode-button,
-#translations-button
+#translations-button,
+#fxa-toolbar-menu-button
 {
   display: none !important
 }
@@ -84,6 +99,10 @@
 @media screen and (max-width:949px)    /*  The window is not enough wide for a one line layout  */
 {:root #nav-bar{padding: 0 5px 0 5px!important; height: calc(var(--NavbarHeightSmall) * 1px) !important} toolbarspring{display: none !important;} #TabsToolbar, #nav-bar{transition: margin-top .25s !important}}
 #nav-bar, #PersonalToolbar{background-color: #0000 !important;background-image: none !important; box-shadow: none !important} #nav-bar{margin-left: 3px;} .tab-background, .tab-stack { min-height: calc(var(--TabsHeight) * 1px) !important}
+
+#urlbar-container {
+  order: 999
+}
 
 /*  Removes urlbar border/background  */
 #urlbar-background {
