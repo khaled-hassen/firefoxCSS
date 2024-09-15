@@ -21,7 +21,7 @@
   padding: 5px 0 !important;;
 }
 
-.titlebar-min, .titlebar-restore {
+.titlebar-min, .titlebar-restore, .titlebar-max {
   display: none !important;
 }
 
@@ -65,9 +65,10 @@
 #tracking-protection-icon-container,
 #reader-mode-button,
 #translations-button,
-#fxa-toolbar-menu-button
+#fxa-toolbar-menu-button,
+#private-browsing-indicator-with-label label
 {
-  display: none !important
+  display: none !important;
 }
 
 /* "This time search with:..." */
